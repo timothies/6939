@@ -1,0 +1,18 @@
+trigger:
+- issue6939
+
+variables:
+  PoolName: 'Azure Pipelines'
+  PoolVmImage: 'windows-2019'
+  BuildPlatform: 'Any CPU'
+  BuildConfiguration: 'Release'
+
+
+pool:
+  name: $(PoolName)
+  vmImage: $(PoolVmImage)
+    
+stages:
+- template: templates/working-jobs.yml
+
+- template: templates/broken-jobs.yml

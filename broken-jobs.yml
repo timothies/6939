@@ -1,0 +1,9 @@
+# File: templates/jobs.yml
+jobs:
+- job: Build
+  steps:
+  - script: npm install
+
+- job: Test
+  steps:
+  - script: npm test
