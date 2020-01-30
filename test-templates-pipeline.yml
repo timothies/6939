@@ -15,4 +15,4 @@ pool:
 stages:
 - template: templates/working-jobs.yml
 
-#- template: templates/broken-jobs.yml
+- template: templates/broken-jobs.yml
