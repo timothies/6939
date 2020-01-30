@@ -1,5 +1,5 @@
 trigger:
-- issue6939
+- master
 
 variables:
   PoolName: 'Azure Pipelines'
